@@ -5,9 +5,14 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class Route {
+public class Travel {
 
     private String duration;
     private String price;
 
+    @Override
+    public String toString() {
+        return "duration >> " + duration + "\n" +
+                "price    >> " + price + "\n";
+    }
 }
